@@ -8,6 +8,8 @@
 
 #import "ViewController.h"
 
+#import "LDSDTestViewController.h"
+
 #import "LDCacheClean.h"
 
 @interface ViewController ()
@@ -39,6 +41,10 @@
     [LDCacheClean clearCachesFromDirectoryPath:[LDSandBox getCachesDirectory] completion:^{
         
     }];
+}
+
+- (IBAction)pushToListViewController:(id)sender {
+    [self presentViewController:[[LDSDTestViewController alloc] init] animated:YES completion:nil];
 }
 
 - (void)didReceiveMemoryWarning {

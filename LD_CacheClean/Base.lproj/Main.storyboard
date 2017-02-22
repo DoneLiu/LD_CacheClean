@@ -62,11 +62,23 @@
                                     <action selector="clear:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cSH-px-8PX"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kFc-ir-buQ">
+                                <rect key="frame" x="36" y="597" width="303" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="xcL-SG-wdZ"/>
+                                </constraints>
+                                <state key="normal" title="头像列表"/>
+                                <connections>
+                                    <action selector="pushToListViewController:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qt3-3s-j1o"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="ay5-kn-k0c" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="5YV-fn-NfC"/>
+                            <constraint firstItem="kFc-ir-buQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="63g-FD-hBX"/>
                             <constraint firstItem="yfO-5K-qnp" firstAttribute="top" secondItem="ay5-kn-k0c" secondAttribute="bottom" constant="20" id="OJC-Ev-LlE"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="kFc-ir-buQ" secondAttribute="trailing" constant="20" id="X9K-13-Vuu"/>
                             <constraint firstItem="KBR-00-w25" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="aWg-tW-rbc"/>
                             <constraint firstAttribute="trailingMargin" secondItem="yfO-5K-qnp" secondAttribute="trailing" constant="20" id="csd-me-Rem"/>
                             <constraint firstAttribute="trailingMargin" secondItem="KBR-00-w25" secondAttribute="trailing" constant="20" id="eD0-NL-bP3"/>
@@ -74,6 +86,7 @@
                             <constraint firstItem="ksU-ys-wTu" firstAttribute="top" secondItem="KBR-00-w25" secondAttribute="bottom" constant="20" id="h36-E1-tFO"/>
                             <constraint firstItem="ksU-ys-wTu" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="kIB-Xg-Kxj"/>
                             <constraint firstItem="yfO-5K-qnp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="o2g-wc-Riv"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="kFc-ir-buQ" secondAttribute="bottom" constant="20" id="oj3-ja-e9w"/>
                             <constraint firstItem="KBR-00-w25" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="40" id="qvg-9n-wuZ"/>
                             <constraint firstAttribute="trailingMargin" secondItem="ksU-ys-wTu" secondAttribute="trailing" constant="20" id="u6I-vq-Kce"/>
                             <constraint firstAttribute="trailingMargin" secondItem="ay5-kn-k0c" secondAttribute="trailing" constant="20" id="zhC-RL-gsD"/>

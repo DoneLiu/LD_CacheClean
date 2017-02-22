@@ -16,6 +16,10 @@
 		130A4FB51E5D31880078993B /* LD_CacheCleanTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 130A4FB41E5D31880078993B /* LD_CacheCleanTests.m */; };
 		130A4FC01E5D31880078993B /* LD_CacheCleanUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 130A4FBF1E5D31880078993B /* LD_CacheCleanUITests.m */; };
 		13676B5E1E5D7E89005E27AF /* LDCacheClean.m in Sources */ = {isa = PBXBuildFile; fileRef = 13676B5D1E5D7E89005E27AF /* LDCacheClean.m */; };
+		13676B621E5D8005005E27AF /* LDSDTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 13676B601E5D8005005E27AF /* LDSDTestViewController.m */; };
+		13676B631E5D8005005E27AF /* LDSDTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13676B611E5D8005005E27AF /* LDSDTestViewController.xib */; };
+		13D45A3B1E5D815E00625AD8 /* LDSDSTestCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 13D45A391E5D815E00625AD8 /* LDSDSTestCell.m */; };
+		13D45A3C1E5D815E00625AD8 /* LDSDSTestCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13D45A3A1E5D815E00625AD8 /* LDSDSTestCell.xib */; };
 		F9F1FCA8AF0D3DA3A76B9D4C /* libPods-LD_CacheClean.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E316D619AC0486119BE51822 /* libPods-LD_CacheClean.a */; };
 /* End PBXBuildFile section */
 
@@ -55,6 +59,12 @@
 		130A4FC11E5D31880078993B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		13676B5C1E5D7E89005E27AF /* LDCacheClean.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDCacheClean.h; sourceTree = "<group>"; };
 		13676B5D1E5D7E89005E27AF /* LDCacheClean.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDCacheClean.m; sourceTree = "<group>"; };
+		13676B5F1E5D8005005E27AF /* LDSDTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDSDTestViewController.h; sourceTree = "<group>"; };
+		13676B601E5D8005005E27AF /* LDSDTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDSDTestViewController.m; sourceTree = "<group>"; };
+		13676B611E5D8005005E27AF /* LDSDTestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LDSDTestViewController.xib; sourceTree = "<group>"; };
+		13D45A381E5D815E00625AD8 /* LDSDSTestCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDSDSTestCell.h; sourceTree = "<group>"; };
+		13D45A391E5D815E00625AD8 /* LDSDSTestCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDSDSTestCell.m; sourceTree = "<group>"; };
+		13D45A3A1E5D815E00625AD8 /* LDSDSTestCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LDSDSTestCell.xib; sourceTree = "<group>"; };
 		4A0EC9C2D4E53E29D43DB5AD /* Pods-LD_CacheClean.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LD_CacheClean.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LD_CacheClean/Pods-LD_CacheClean.debug.xcconfig"; sourceTree = "<group>"; };
 		E316D619AC0486119BE51822 /* libPods-LD_CacheClean.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LD_CacheClean.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBB5EF88E5D667F84F8C40B9 /* Pods-LD_CacheClean.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LD_CacheClean.release.xcconfig"; path = "Pods/Target Support Files/Pods-LD_CacheClean/Pods-LD_CacheClean.release.xcconfig"; sourceTree = "<group>"; };
@@ -112,6 +122,12 @@
 			isa = PBXGroup;
 			children = (
 				13676B5B1E5D7E46005E27AF /* LDCacheClean */,
+				13676B5F1E5D8005005E27AF /* LDSDTestViewController.h */,
+				13676B601E5D8005005E27AF /* LDSDTestViewController.m */,
+				13676B611E5D8005005E27AF /* LDSDTestViewController.xib */,
+				13D45A381E5D815E00625AD8 /* LDSDSTestCell.h */,
+				13D45A391E5D815E00625AD8 /* LDSDSTestCell.m */,
+				13D45A3A1E5D815E00625AD8 /* LDSDSTestCell.xib */,
 				130A4F9D1E5D31880078993B /* AppDelegate.h */,
 				130A4F9E1E5D31880078993B /* AppDelegate.m */,
 				130A4FA01E5D31880078993B /* ViewController.h */,
@@ -288,7 +304,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				130A4FAA1E5D31880078993B /* LaunchScreen.storyboard in Resources */,
+				13676B631E5D8005005E27AF /* LDSDTestViewController.xib in Resources */,
 				130A4FA71E5D31880078993B /* Assets.xcassets in Resources */,
+				13D45A3C1E5D815E00625AD8 /* LDSDSTestCell.xib in Resources */,
 				130A4FA51E5D31880078993B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -364,7 +382,9 @@
 			files = (
 				13676B5E1E5D7E89005E27AF /* LDCacheClean.m in Sources */,
 				130A4FA21E5D31880078993B /* ViewController.m in Sources */,
+				13D45A3B1E5D815E00625AD8 /* LDSDSTestCell.m in Sources */,
 				130A4F9F1E5D31880078993B /* AppDelegate.m in Sources */,
+				13676B621E5D8005005E27AF /* LDSDTestViewController.m in Sources */,
 				130A4F9C1E5D31880078993B /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

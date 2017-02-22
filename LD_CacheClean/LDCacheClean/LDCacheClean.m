@@ -78,9 +78,6 @@
             NSString *filePath = [dirPath stringByAppendingPathComponent:fileName];
             
             flag = [LDCacheClean deleteCachesWithFilePath:filePath];
-            if (!flag) {
-                break;
-            }
         }
         
         dispatch_async(dispatch_get_main_queue(), ^{
