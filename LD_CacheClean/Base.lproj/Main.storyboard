@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KBR-00-w25">
+                                <rect key="frame" x="36" y="60" width="303" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="iQ9-fR-0aJ"/>
+                                </constraints>
+                                <state key="normal" title="获取文件大小"/>
+                                <connections>
+                                    <action selector="getFileSize:" destination="BYZ-38-t0r" eventType="touchUpInside" id="d9m-Tg-wcX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ksU-ys-wTu">
+                                <rect key="frame" x="36" y="130" width="303" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="WBp-jj-BZI"/>
+                                </constraints>
+                                <state key="normal" title="所有文件名"/>
+                                <connections>
+                                    <action selector="allFiles:" destination="BYZ-38-t0r" eventType="touchUpInside" id="k4C-1e-Noa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ay5-kn-k0c">
+                                <rect key="frame" x="36" y="200" width="303" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="8If-ZE-hCn"/>
+                                </constraints>
+                                <state key="normal" title="删除文件夹或文件"/>
+                                <connections>
+                                    <action selector="delete:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lEY-fz-xw3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yfO-5K-qnp">
+                                <rect key="frame" x="36" y="270" width="303" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="w4e-9N-cdl"/>
+                                </constraints>
+                                <state key="normal" title="清空文件夹"/>
+                                <connections>
+                                    <action selector="clear:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cSH-px-8PX"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ay5-kn-k0c" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="5YV-fn-NfC"/>
+                            <constraint firstItem="yfO-5K-qnp" firstAttribute="top" secondItem="ay5-kn-k0c" secondAttribute="bottom" constant="20" id="OJC-Ev-LlE"/>
+                            <constraint firstItem="KBR-00-w25" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="aWg-tW-rbc"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="yfO-5K-qnp" secondAttribute="trailing" constant="20" id="csd-me-Rem"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="KBR-00-w25" secondAttribute="trailing" constant="20" id="eD0-NL-bP3"/>
+                            <constraint firstItem="ay5-kn-k0c" firstAttribute="top" secondItem="ksU-ys-wTu" secondAttribute="bottom" constant="20" id="ghT-7A-H6j"/>
+                            <constraint firstItem="ksU-ys-wTu" firstAttribute="top" secondItem="KBR-00-w25" secondAttribute="bottom" constant="20" id="h36-E1-tFO"/>
+                            <constraint firstItem="ksU-ys-wTu" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="kIB-Xg-Kxj"/>
+                            <constraint firstItem="yfO-5K-qnp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="o2g-wc-Riv"/>
+                            <constraint firstItem="KBR-00-w25" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="40" id="qvg-9n-wuZ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ksU-ys-wTu" secondAttribute="trailing" constant="20" id="u6I-vq-Kce"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ay5-kn-k0c" secondAttribute="trailing" constant="20" id="zhC-RL-gsD"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="37.331334332833585"/>
+        </scene>
+    </scenes>
+</document>
